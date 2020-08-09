@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+  <!-- Aquí definimos que el documento está bajo el estándar HTML5 -->
+<html lang="en">
+  <!-- Representa la raíz de nuestro documento HTML. Todos los demás elementos deben ser descendientes de este elemento. -->
+<head>
+  <!-- En el head siempre vamos a encontrar los metadatos (que se escriben con la etiqueta vacía <meta>) del documento que
+  vamos a escribir, incluyendo también enlaces (que por lo general son de nuestro archivo de estilos, tipografías, etc) -->
+  <meta charset="UTF-8">
+  <!-- Define los metadatos que no pueden ser definidos usando otro elemento HTML, como por ejemplo el tipo de codificación: UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Aquí definimos el título de nuestro documento, sólo puede contener texto y se muestra en la pestañita de la página. -->
+</head>
+
+<style>
+  /* Aquí iría nuestro CSS */
+</style>
+
+<script>
+  // Aquí debería ir nuestro JavaScript
+</script>
+
+<body>
+  <!-- Es la única etiqueta body que debe aparecer en nuestro documento y representa todo el contenido principal.
+  Aquí es donde escribimos, las etiquetas <div>, <h1> </h1>, <p></p>, <footer></footer>, entre otras que hacen parte del cuerpo de nuestra estructura. -->
+    <img src="" alt="">
+    <!-- La utilizamos para añadir imagenes. Normalmente debe ir acompañada de los atributos src (donde se coloca la url o enlace en donde se encuentra nuestra imagen)
+    y alt (por si la imagen no carga, el usuario pueda leer el nombre de la imagen para tener una idea de lo que se iba a ver. Otra de las razones es porque
+    los lectores de pantalla leen justamente este atributo y así personas con discapacidad visual pueden tener una idea de lo que aparece en la imagen) -->
+    <input type="text">
+    <!-- Es un campo que en donde el usuario puede ingresar datos. Es usada normalmente en formularios como el de inicio de sesión, registro o el buscador de nuestra app. -->
+    <br>
+    <!-- Con esta etiqueta puedes hacer saltos de línea. Por ejemplo, si quieres escribir un poema, harías algo como:
+    <p>Las rosas son rojas, <br> Las violetas son azules...</p>
+    Y el resultado que verías sería:
+    Las rosas son rojas,
+    Las violetas son azules...
+    No tendrías que escribir por ejemplo:
+    <p>Las rosas son rojas, </p>
+    <p>Las violetas son azules...</p> -->
+    <hr>
+    <!-- Es muy parecida a <br> pero en este caso representa un quiebre temático entre los párrafos de una sección, por ejemplo. -->
+    <div>
+      <!-- <h1>Descripción de las etiquetas semánticas para la estructura base de nuestra página.</h1> -->
+      <header></header>
+      <!-- Esta etiqueta la usamos para definir la cabecera de nuestra página en donde usualmente colocamos un logo, el título de la página y a veces un menú con una lista de navegación. -->
+      <nav></nav>
+      <!-- Esta es la etiqueta que usamos para colocar enlaces de navegación. -->
+      <article></article>
+      <!-- La usamos normalmente para definir contenido que puede vivir independiente al resto del contenido. -->
+      <section></section>
+      <!-- En esta etiqueta colocamos el contenido de las secciones de nuestra página. Por ejemplo, en nuestra aplicación de PlatziVideo las secciones serían: mi lista, tendencias, etc.. -->
+      <aside></aside>
+      <!-- El contenido de esta etiqueta no le agrega sentido al resto del contenido de la página, es decir, que si se elimina, no afecta. Como por ejemplo, la publicidad de nuestro sitio. -->
+      <footer></footer>
+      <!-- Es la parte final de nuestra página en donde normalmente se coloca información que el usuario puede requerir de nuestro sitio como por ejemplo, nuestras redes sociales, información de contacto, políticas de privacidad, entre otras. -->
+      <h1></h1>, <h2></h2>, <h3></h3>, <h4></h4>, <h5></h5>, <h6></h6>
+      <!-- Usamos estas etiquetas para describir títulos en nuestra página y los números en ellas representan el nivel de importancia o jerarquía, siendo <h1></h1> el título más importante y <h6></h6> el tpitulo menos importante. -->
+    </div>
+    <div>
+      <!-- <h1>Descripción de otras etiquetas muy usadas</h1> -->
+      <div></div>
+      <!-- Es el contenedor más común y más usado en HTML pero no tiene un significado especial más allá de ser un contenedor. -->
+      <button></button>
+      <!-- Es utilizado para hacer botones. Normalmente, va acompañado del evento onclick y de un script que define la acción que se realizará al dar clic en el botón. <button onclick="">Click me!</button> -->
+      <p></p>
+      <!-- Con esta etiqueta escribimos párrafos. -->
+      <a href=""></a>
+      <!-- Se utiliza para colocar enlaces. Se acompaña del atributo href en donde se coloca la dirección a la cual queremos dirigir.
+      Por ejemplo: <a href="www.mr_rralonso.com">My web page</a> -->
+      <ol></ol>
+      <!-- Describe una lista ordenada. Los ítems se escriben con la etiqueta <li></li>.
+      Por ejemplo: 
+      <h1>Cosas que debo hacer hoy:</h1>
+      <ol>
+        <li>Ir al gym</li>
+        <li>Ir a la universidad</li>
+        <li>Hacer el trabajo de programación</li>
+        <li>Terminar el curso de Platzi</li>
+      </ol> -->
+
+      <!-- Veríamos el siguiente resultado:
+      Cosas que debo hacer hoy:
+        1. Ir al gym
+        2. Ir a la universidad
+        3. Hacer el trabajo de programación
+        4. Terminar el curso de Platzi -->
+
+      <ul></ul>
+      <!-- Describe una lista desordenada. Los ítems se escriben con la etiqueta <li></li>.
+      Por ejemplo:
+      <h1>Posibles nombres para mi mascota:</h1>
+      <ul>
+        <li>Mimi</li>
+        <li>Puppy</li>
+        <li>Tomy</li>
+      </ul>
+
+      Veríamos el siguiente resultado:
+
+      Posibles nombres para mi mascota:
+        - Mimi
+        - Puppy
+        - Tomy -->
+      
+      <li></li>
+      <!-- utilizado para escribir los ítems de una lista -->
+      <form action=""></form>
+      <!-- Usado para crear formularios.
+      Van normalmente acompañados de las etiquetas <input type="text">, <label for=""></label>, <textarea name="" id="" cols="30" rows="10"></textarea>, <select name="" id=""></select>, <option value=""></option>, <button></button>, entre otros.
+      Más respecto a esta etiqueta en: https://www.w3schools.com/tags/tag_form.asp -->
+    </div>
+</body>
+</html>
